@@ -12,7 +12,7 @@ public class TestCalc {
 	@Test
 	public void test() {
 
-		assertEquals(30, obj.sum(20,10));
+		assertEquals(31, obj.sum(20,10));
 		assertEquals(10, obj.diff(20,10));
 
 	}
