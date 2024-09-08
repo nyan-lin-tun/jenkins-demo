@@ -28,11 +28,25 @@ pipeline
 				sh 'mvn test'
 			}			
 		}
+		stage('Pre-build Stage')
+		{
+			steps
+			{
+				echo 'This is pre-build stage.'
+			}			
+		}
 		stage('Build Stage')
 		{
 			steps
 			{
 				sh 'mvn install'
+			}			
+		}
+		stage('Post-build Stage')
+		{
+			steps
+			{
+				echo 'This is post-build stage.'
 			}			
 		}
 		stage('Java Version Check Stage')
