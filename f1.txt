@@ -1,2 +1,3 @@
 hello
 demo agent2
+trigger
